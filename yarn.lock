@@ -751,6 +751,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"task-3@workspace:tasks/task-3":
+  version: 0.0.0-use.local
+  resolution: "task-3@workspace:tasks/task-3"
+  dependencies:
+    acorn: "npm:^8.15.0"
+    zimmerframe: "npm:^1.1.4"
+  languageName: unknown
+  linkType: soft
+
 "type-check@npm:^0.4.0, type-check@npm:~0.4.0":
   version: 0.4.0
   resolution: "type-check@npm:0.4.0"
@@ -800,5 +809,12 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: 10c0/dceb44c28578b31641e13695d200d34ec4ab3966a5729814d5445b194933c096b7ced71494ce53a0e8820685d1d010df8b2422e5bf2cdea7e469d97ffbea306f
+  languageName: node
+  linkType: hard
+
+"zimmerframe@npm:^1.1.4":
+  version: 1.1.4
+  resolution: "zimmerframe@npm:1.1.4"
+  checksum: 10c0/9470cbf22cefae975ab413c7158a119d082b354ddcf0da48a842f2f42246fa15943cd9b92c047de39db38015e3b866e32f383bc217e8e4f4192945c7d425536b
   languageName: node
   linkType: hard
