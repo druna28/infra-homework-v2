@@ -16,7 +16,8 @@
     "lintcommit": "",
     "build": "node -p 'console.log(\"build\")'",
     "test": "node -r './tasks/task-1/loader.cjs' ./tasks/task-1/test/index.cjs",
-    "lint": "npx eslint tasks"
+    "lint": "npx eslint tasks",
+    "deploy": "echo deploy"
   },
   "workspaces": [
     "tasks/*"
