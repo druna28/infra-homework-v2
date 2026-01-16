@@ -21,24 +21,33 @@ jobs:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
         with:
-          node-version: ${{ matrix.node }}
+          cashe: yarn
       - run: yarn
   lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
+        with:
+          cashe: yarn
+      - run: yarn
       - run: yarn lint
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
+        with:
+          cashe: yarn
+      - run: yarn
       - run: yarn build
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
+        with:
+          cashe: yarn
+      - run: yarn
       - run: yarn test
   
