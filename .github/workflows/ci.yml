@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
         with:
-          cashe: yarn
+          cashe: 'yarn'
       - run: yarn
   lint:
     runs-on: ubuntu-latest
@@ -29,7 +29,7 @@ jobs:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
         with:
-          cashe: yarn
+          cashe: 'yarn'
       - run: yarn
       - run: yarn lint
   build:
@@ -38,7 +38,7 @@ jobs:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
         with:
-          cashe: yarn
+          cashe: 'yarn'
       - run: yarn
       - run: yarn build
   test:
@@ -48,7 +48,7 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: ${{matrix.node}}
-          cashe: yarn
+          cashe: 'yarn'
       - run: yarn
       - run: yarn test
   
